@@ -21,4 +21,12 @@ const Wrap = styled.div`
     display:flex;
     justify-content: center;
     background-color: #ffffff;
+
+    @media (max-width: 600px){
+    display:none;
+    }
+
+    @media (max-width: 1000px){
+    margin-top: 70px;
+    }
 `

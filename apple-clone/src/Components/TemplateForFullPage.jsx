@@ -67,11 +67,21 @@ const Header = styled.h1`
     font-size: 3.4em;
     font-weight:bold;
     padding-top:40px;
+
+    @media (max-width: 600px){
+    font-size: 1.7em;
+  }
 `;
 
 const M2Wrap = styled.div` 
 text-align:center;
 justify-content:center;
+
+@media (max-width: 600px){
+    max-width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+  }
 
 
 `;
@@ -79,12 +89,21 @@ justify-content:center;
 
 const M2 = styled.img`
    width: 18em;
+
+
+   @media (max-width: 600px){
+    max-width: 100%;
+  }
 `;
 
 
 const MacImg = styled.img`
 width :650px;
 justify-content:center;
+
+@media (max-width: 650px){
+    max-width: 100%;
+  }
 `;
 
 const MacImgDiv = styled.div`
@@ -108,6 +127,11 @@ const LinkWrap = styled.div`
 display:flex;
 text-align:center;
 justify-content:center;
+
+@media (max-width: 600px){
+    max-width: 100%;
+    flex-direction:column;
+  }
 
 
 `

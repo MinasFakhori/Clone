@@ -48,6 +48,11 @@ export default GridTemplate;
 const Wrap = styled.div`
   display: flex;
   flex-direction:row;
+
+
+  @media (max-width: 1500px){
+    flex-direction:column;
+  }
   `;
 
 
@@ -70,6 +75,11 @@ const Header = styled.h1`
 
 const M2 = styled.img`
     width: 180px;
+
+    @media (max-width: 600px){
+    max-width: 80%;
+  }
+
 `;
 
 
@@ -100,10 +110,20 @@ const Link = styled.p`
 const Img = styled.img`
 width: 44em;
 margin-bottom:2px;
+
+@media (max-width: 745px){
+    width: 80%;
+  }
 `
 
 const Imgheader = styled.img`
     width: 9em;
+
+    @media (max-width: 740px){
+    max-width: 95%;
+    display: block;
+    margin: 0 auto 0 auto;
+  }
 `
 ;
 
